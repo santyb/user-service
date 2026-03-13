@@ -1,0 +1,43 @@
+2026-03-13 15:51:57.031 [main] INFO  c.sdd.userservice.UserServiceApplication - Starting UserServiceApplication using Java 21.0.10 with PID 4772 (/Users/santiagobm/IdeaProjects/SDD/user-service/build/classes/java/main started by santiagobm in /Users/santiagobm/IdeaProjects/SDD/user-service)
+2026-03-13 15:51:57.032 [main] DEBUG c.sdd.userservice.UserServiceApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2026-03-13 15:51:57.033 [main] INFO  c.sdd.userservice.UserServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-03-13 15:51:57.709 [main] INFO  o.apache.catalina.core.StandardService - Starting service [Tomcat]
+2026-03-13 15:51:57.709 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2026-03-13 15:51:57.760 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-03-13 15:51:57.775 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-03-13 15:51:57.887 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:userdb user=SA
+2026-03-13 15:51:57.888 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-03-13 15:51:57.928 [main] DEBUG c.s.u.infrastructure.config.WebConfig$1 - Filter 'contentCachingFilter' configured for use
+2026-03-13 15:51:57.987 [main] INFO  o.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-13 15:51:58.019 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-03-13 15:51:58.033 [main] INFO  o.h.c.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-03-13 15:51:58.249 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-13 15:51:58.878 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-13 15:51:59.224 [main] INFO  c.sdd.userservice.UserServiceApplication - Started UserServiceApplication in 2.539 seconds (process running for 3.779)
+2026-03-13 15:51:59.225 [main] INFO  c.s.u.i.config.DataInitializer - Inserting sample users...
+2026-03-13 15:51:59.225 [main] INFO  c.s.u.application.service.UserService - Creating user with name='John Doe' email='john.doe@example.com'
+2026-03-13 15:51:59.277 [main] DEBUG c.s.u.application.service.UserService - User created with id='61fde3dc-c808-4469-b665-52455e0f5432'
+2026-03-13 15:51:59.277 [main] INFO  c.s.u.application.service.UserService - Creating user with name='Jane Smith' email='jane.smith@example.com'
+2026-03-13 15:51:59.279 [main] DEBUG c.s.u.application.service.UserService - User created with id='9978ff14-5044-41b6-ac24-d202a27fe432'
+2026-03-13 15:51:59.279 [main] INFO  c.s.u.application.service.UserService - Creating user with name='Bob Johnson' email='bob.johnson@example.com'
+2026-03-13 15:51:59.280 [main] DEBUG c.s.u.application.service.UserService - User created with id='338a81cb-a0b1-462f-9358-6fc566f588e9'
+2026-03-13 15:51:59.280 [main] INFO  c.s.u.i.config.DataInitializer - Sample data initialized: 3 users inserted.
+2026-03-13 15:58:31.780 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-13 15:58:31.886 [http-nio-8080-exec-2] INFO  c.s.u.application.service.UserService - Fetching all users
+2026-03-13 15:58:32.009 [http-nio-8080-exec-2] DEBUG c.s.u.application.service.UserService - Found 3 users
+2026-03-13 15:58:32.105 [http-nio-8080-exec-2] INFO  c.s.u.i.config.LoggingInterceptor - [GET] /api/users | status=200 | requestBody=(empty) | responseBody=[{"id":"61fde3dc-c808-4469-b665-52455e0f5432","name":"John Doe","email":"john.doe@example.com","createdAt":"2026-03-13T20:51:59.225757Z"},{"id":"9978ff14-5044-41b6-ac24-d202a27fe432","name":"Jane Smith","email":"jane.smith@example.com","createdAt":"2026-03-13T20:51:59.277615Z"},{"id":"338a81cb-a0b1-462f-9358-6fc566f588e9","name":"Bob Johnson","email":"bob.johnson@example.com","createdAt":"2026-03-13T20:51:59.279321Z"}] | time=246ms
+2026-03-13 15:59:05.300 [http-nio-8080-exec-3] INFO  c.s.u.application.service.UserService - Fetching user with id='9978ff14-5044-41b6-ac24-d202a27fe432'
+2026-03-13 15:59:05.317 [http-nio-8080-exec-3] INFO  c.s.u.i.config.LoggingInterceptor - [GET] /api/users/9978ff14-5044-41b6-ac24-d202a27fe432 | status=200 | requestBody=(empty) | responseBody={"id":"9978ff14-5044-41b6-ac24-d202a27fe432","name":"Jane Smith","email":"jane.smith@example.com","createdAt":"2026-03-13T20:51:59.277615Z"} | time=100ms
+2026-03-13 16:00:00.795 [http-nio-8080-exec-4] INFO  c.s.u.application.service.UserService - Creating user with name='Jackes Poland' email='jk@example.com'
+2026-03-13 16:00:00.817 [http-nio-8080-exec-4] DEBUG c.s.u.application.service.UserService - User created with id='d8d40514-fc24-475b-ae3b-676b93e20967'
+2026-03-13 16:00:00.819 [http-nio-8080-exec-4] INFO  c.s.u.i.config.LoggingInterceptor - [POST] /api/users | status=201 | requestBody={
+    "name": "Jackes Poland",
+    "email": "jk@example.com"
+} | responseBody={"id":"d8d40514-fc24-475b-ae3b-676b93e20967","name":"Jackes Poland","email":"jk@example.com","createdAt":"2026-03-13T21:00:00.795531Z"} | time=117ms
+2026-03-13 16:00:45.016 [http-nio-8080-exec-5] INFO  c.s.u.application.service.UserService - Fetching user with id='d8d40514-fc24-475b-ae3b-676b93e20967'
+2026-03-13 16:00:45.029 [http-nio-8080-exec-5] INFO  c.s.u.i.config.LoggingInterceptor - [GET] /api/users/d8d40514-fc24-475b-ae3b-676b93e20967 | status=200 | requestBody=(empty) | responseBody={"id":"d8d40514-fc24-475b-ae3b-676b93e20967","name":"Jackes Poland","email":"jk@example.com","createdAt":"2026-03-13T21:00:00.795531Z"} | time=17ms
+2026-03-13 16:01:24.766 [http-nio-8080-exec-6] INFO  c.s.u.application.service.UserService - Fetching all users
+2026-03-13 16:01:24.776 [http-nio-8080-exec-6] DEBUG c.s.u.application.service.UserService - Found 4 users
+2026-03-13 16:01:24.781 [http-nio-8080-exec-6] INFO  c.s.u.i.config.LoggingInterceptor - [GET] /api/users | status=200 | requestBody=(empty) | responseBody=[{"id":"61fde3dc-c808-4469-b665-52455e0f5432","name":"John Doe","email":"john.doe@example.com","createdAt":"2026-03-13T20:51:59.225757Z"},{"id":"9978ff14-5044-41b6-ac24-d202a27fe432","name":"Jane Smith","email":"jane.smith@example.com","createdAt":"2026-03-13T20:51:59.277615Z"},{"id":"338a81cb-a0b1-462f-9358-6fc566f588e9","name":"Bob Johnson","email":"bob.johnson@example.com","createdAt":"2026-03-13T20:51:59.279321Z"},{"id":"d8d40514-fc24-475b-ae3b-676b93e20967","name":"Jackes Poland","email":"jk@example.com","createdAt":"2026-03-13T21:00:00.795531Z"}] | time=20ms
+2026-03-13 16:01:37.282 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-03-13 16:01:37.287 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

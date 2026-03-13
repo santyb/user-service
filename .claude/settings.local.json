@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/santiagobm/IdeaProjects/SDD/MicroServiceSDD/src/main/java/com/sdd/userservice/domain/model\nmkdir -p /Users/santiagobm/IdeaProjects/SDD/MicroServiceSDD/src/main/java/com/sdd/userservice/application/port\nmkdir -p /Users/santiagobm/IdeaProjects/SDD/MicroServiceSDD/src/main/java/com/sdd/userservice/application/service\nmkdir -p /Users/santiagobm/IdeaProjects/SDD/MicroServiceSDD/src/main/java/com/sdd/userservice/adapters/inbound/rest\nmkdir -p /Users/santiagobm/IdeaProjects/SDD/MicroServiceSDD/src/main/java/com/sdd/userservice/adapters/outbound/persistence/entity\nmkdir -p /Users/santiagobm/IdeaProjects/SDD/MicroServiceSDD/src/main/java/com/sdd/userservice/adapters/outbound/persistence/repository\nmkdir -p /Users/santiagobm/IdeaProjects/SDD/MicroServiceSDD/src/main/java/com/sdd/userservice/adapters/outbound/persistence/adapter\nmkdir -p /Users/santiagobm/IdeaProjects/SDD/MicroServiceSDD/src/main/java/com/sdd/userservice/infrastructure/config\nmkdir -p /Users/santiagobm/IdeaProjects/SDD/MicroServiceSDD/src/main/resources\nmkdir -p /Users/santiagobm/IdeaProjects/SDD/MicroServiceSDD/src/test/java/com/sdd/userservice/domain/model\nmkdir -p /Users/santiagobm/IdeaProjects/SDD/MicroServiceSDD/src/test/java/com/sdd/userservice/application/service\nmkdir -p /Users/santiagobm/IdeaProjects/SDD/MicroServiceSDD/src/test/java/com/sdd/userservice/adapters/inbound/rest)"
+    ]
+  }
+}
